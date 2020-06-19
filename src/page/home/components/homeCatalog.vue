@@ -83,5 +83,5 @@ export default {
    text-align:center
    padding-top:.2rem
    color:#252e3f
-
+   padding-bottom:.5rem
 </style>

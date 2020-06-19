@@ -3,6 +3,7 @@
     <home-header class="home-header" ></home-header>
     <home-swiper></home-swiper>
     <home-catalog></home-catalog>
+    <home-hot></home-hot>
   </div>	
 </template>
 
@@ -10,12 +11,14 @@
 import homeHeader from './components/homeHeader.vue'
 import homeSwiper from './components/homeSwiper.vue'
 import homeCatalog from './components/homeCatalog.vue'
+import homeHot from './components/homeHot.vue'
 export default {
   name: 'Home',
   components:{
     homeHeader,
     homeSwiper,
-    homeCatalog
+    homeCatalog,
+    homeHot
   }
 
   }
