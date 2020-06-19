@@ -37,7 +37,7 @@ export default {
    margin-left:.2rem
    margin-right:.2rem
    border-radius:.5rem
-   box-shadow:0 0 .01rem  .02rem #005
+   box-shadow:0 0 .01rem  .02rem #ccc
    
   .header-city
    float:right
