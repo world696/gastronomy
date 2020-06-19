@@ -4,8 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // 引入两个css文件 border.css&reset.css
-
-
+import  '@/assets/style/border.css'
+import  '@/assets/style/reset.css'
+import  '@/assets/style/iconfont.css'
 import fastclick from 'fastclick'
 
 Vue.config.productionTip = false

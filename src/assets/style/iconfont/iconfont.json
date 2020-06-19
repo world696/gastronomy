@@ -1,0 +1,30 @@
+{
+  "id": "1885934",
+  "name": "gastronomy",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1048882",
+      "name": "向左",
+      "font_class": "icon_on_the_left",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "4294067",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e783",
+      "unicode_decimal": 59267
+    },
+    {
+      "icon_id": "6884486",
+      "name": "向下",
+      "font_class": "xiangxia",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}
