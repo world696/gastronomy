@@ -46,7 +46,7 @@ export default {
         },
          {
           id:"13",
-          imgUrl:"http://erp.cntour365.com/system/attachments/country/7dd84ba7d44e00/201603081031351.jpg",
+          imgUrl:"https://youimg1.c-ctrip.com/target/fd/tg/g5/M0A/E5/E7/CggYr1bJFg6AX3U8AAGao_SUFTQ466.jpg",
           desc:"上海会馆",
           detail:"上海会馆是一家带有新式上海味的本帮餐厅，开在素有上海老城厢之美誉的城隍庙附近。环境优雅，海派壁画、落地玻璃、还有美艳的水晶灯，处处让这家餐厅流露着华丽的气息。这里菜价格适中，菜品精致，味道也很不错。本店特色美食：蟹粉豆腐 , 松鼠桂鱼 , 糖醋小排 , 宫廷野山菌 , 红精制红烧肉 , 黑椒牛肉粒 , 飘香榴莲酥 , 响油鳝丝 。"
          },
