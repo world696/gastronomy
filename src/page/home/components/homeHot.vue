@@ -55,38 +55,10 @@
 <script>
 export default {
   name: 'homeHot',
-  data(){
-    return {
-      hotTrendList:[
-        {
-          id:"000001",
-          desc:"来一次,美食之旅吧！",
-          write:"闸北区的老字号，主打葱油拌面，清汤面，浇头有糖醋小排，红烧狮子头，四喜烤麸，咸菜肉丝，百叶包，雪菜肉末等等。因价格亲民，浇头分量足为人称道，面底可以汤面或者拌面，基础价为7元。到的时候刚12点，队伍就排了好长，都排到店门口了，才发现里面还有弯弯曲曲的队伍，排了将近一个小时才吃到嘴里。本文由厨影美食编辑整理，欢迎加入厨影超级吃货群，畅谈美味，享受人生！这家店工作日开早午市，休息日只开早市（10点半关门）",
-          imgUrl:"https://www.xianchihuo.net/wp-content/uploads/2020/03/147ee16cb38815.jpg"
-        },
-        {
-          id:"000002",
-          desc:"来一次,美食之旅吧！",
-          write:"大壶春，老上海人都知道，虽然现在分店到处都是（大壶春生煎在上海约有12家分店），人气最旺的是位于四川中路的总店以及云南路店。据《上海通志》记载，大壶春创建于1932年，可谓上海的生煎老字号，以鲜肉生煎最为著名。从老一辈上海人开始，到现在的上海小孩，几代上海人都是吃着“大壶春”生煎长大、变老的。2016年大壶春四川中路旗舰店还入选了上海米其林必比登美食推介，在门口总会看到排的老长的队伍，可见大壶春的受欢迎程度。",
-          imgUrl:"https://www.xianchihuo.net/wp-content/uploads/2020/03/17c7e3f63a1e5e.jpg"
-        }
-      ],
-      hotPriseList:[
-        {
-          id:"00001",
-          num:"50",
-          prise:"8"
-        }
-      ],
-      hotContentList:[
-        {
-          id:"0001",
-          imgUrl:"//a.vpimg2.com/upload/merchandise/pdcpos/1100005413/2020/0104/143/08ac5e89-85bd-42ef-a55a-47268d5be17a_420x420_90.jpg",
-          desc:"椒吱懒人火锅自热小火锅速食即食自煮自助方便网红砂锅土豆粉火锅"
-
-        }
-      ]
-    }
+  props:{
+    hotTrendList:Array,
+    hotPriseList:Array,
+    hotContentList:Array
   }
 }
 </script>

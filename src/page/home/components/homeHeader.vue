@@ -7,7 +7,7 @@
         <span class="iconfont">&#xe783;</span>上海
      </div>
      <div class="header-city" :class="[showCity]">
-        北京<span class="iconfont">&#xe626;</span>
+        {{this.city}}<span class="iconfont">&#xe626;</span>
      </div>
    </div>
 </template>
@@ -15,6 +15,7 @@
 <script>
 export default {
   name: 'homeHeader',
+  props:['city'],
   data(){
     return {
       showHeader:'',
