@@ -6,9 +6,11 @@
      <div class="header-search" :class="[showSearch]">
         <span class="iconfont">&#xe783;</span>上海
      </div>
+     <router-link to="/location">
      <div class="header-city" :class="[showCity]">
         {{this.city}}<span class="iconfont">&#xe626;</span>
      </div>
+     </router-link>
    </div>
 </template>
 
