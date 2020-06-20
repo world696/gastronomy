@@ -4,6 +4,7 @@
     <home-swiper></home-swiper>
     <home-catalog></home-catalog>
     <home-hot></home-hot>
+    <home-weekend></home-weekend>
   </div>	
 </template>
 
@@ -12,13 +13,16 @@ import homeHeader from './components/homeHeader.vue'
 import homeSwiper from './components/homeSwiper.vue'
 import homeCatalog from './components/homeCatalog.vue'
 import homeHot from './components/homeHot.vue'
+import homeWeekend from './components/homeWeekend.vue'
+
 export default {
   name: 'Home',
   components:{
     homeHeader,
     homeSwiper,
     homeCatalog,
-    homeHot
+    homeHot,
+    homeWeekend
   }
 
   }
