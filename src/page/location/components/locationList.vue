@@ -2,7 +2,7 @@
   <div  class="list" ref="wrapper">
      <div>
      <div class="present-area">
-       <div class="present-title">当前</div>
+       <div class="present-title" ref="present">当前</div>
        <div class="present-button">{{this.city}}</div>
      </div>
      
@@ -20,7 +20,8 @@
        <div  
          class="alph-wrapper"
          v-for="(item,key) of cities"
-         :key="key">
+         :key="key"
+         :ref="key">
         <div class="alph-title">{{key}}</div>
         <div class="alph-list">
            <div 
@@ -41,6 +42,21 @@ import BScroll from 'better-scroll'
 import BMap from 'BMap'
 export default {
   name: 'locationList',
+  props:{
+    letter:String
+  },
+  watch:{
+    letter(){
+      const elementLetter = this.$refs[this.letter]
+      const elementPresent = this.$refs.present
+      if(elementLetter){
+        const element = elementLetter[0]
+        this.scroll.scrollToElement(element)
+      }else{
+        this.scroll.scrollToElement(elementPresent)
+      }
+    }
+  },
   data(){
     return {
       city:'',
@@ -127,7 +143,7 @@ export default {
     }
   },
   mounted(){
-    const scroll = new BScroll(this.$refs.wrapper,{
+    this.scroll = new BScroll(this.$refs.wrapper,{
       click:true,
       mouseWheel:{
         speed:20,
@@ -174,7 +190,7 @@ export default {
     padding:.2rem .2rem
     background:#fff
   .present-button
-    width:90%
+    width:80%
     margin-left:.2rem
   .hot-button
     width:10%
