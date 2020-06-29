@@ -17,6 +17,9 @@
 
 export default {
   name: 'locationAlphabet',
+  props:{
+    alphabetList:Array
+  },
   methods:{
     handleLetterClick(e){
       this.content = e.target.innerText
@@ -41,122 +44,8 @@ export default {
       hidden:{
         display:'none'
       },
-      content:'',
-      alphabetList:[
-        {
-        id:"101110",
-        content:"当前"
-        },
-        {
-        id:"101111",
-        content:"热门城市"
-        },
-        {
-        id:"111112",
-        content:"A"
-        },
-        {
-        id:"111113",
-        content:"B"
-        },
-        {
-        id:"111114",
-        content:"C"
-        },
-        {
-        id:"111115",
-        content:"D"
-        },
-        {
-        id:"111116",
-        content:"E"
-        },
-        {
-        id:"111117",
-        content:"F"
-        },
-        {
-        id:"111118",
-        content:"G"
-        },
-        {
-        id:"111119",
-        content:"H"
-        },
-        {
-        id:"111120",
-        content:"I"
-        },
-        {
-        id:"111121",
-        content:"J"
-        },
-        {
-        id:"111122",
-        content:"K"
-        },
-        {
-        id:"111123",
-        content:"L"
-        },
-        {
-        id:"111124",
-        content:"M"
-        },
-        {
-        id:"111125",
-        content:"N"
-        },
-        {
-        id:"111126",
-        content:"O"
-        },
-        {
-        id:"111127",
-        content:"P"
-        },
-        {
-        id:"111128",
-        content:"Q"
-        },
-        {
-        id:"111129",
-        content:"R"
-        },
-        {
-        id:"111130",
-        content:"S"
-        },
-        {
-        id:"111131",
-        content:"T"
-        },
-        {
-        id:"111132",
-        content:"U"
-        },
-        {
-        id:"111133",
-        content:"V"
-        },
-        {
-        id:"111134",
-        content:"W"
-        },
-        {
-        id:"111110",
-        content:"X"
-        },
-        {
-        id:"111135",
-        content:"Y"
-        },
-        {
-        id:"111136",
-        content:"Z"
-        }
+      content:''
 
-      ]
     }
   }
   }

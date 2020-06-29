@@ -43,7 +43,9 @@ import BMap from 'BMap'
 export default {
   name: 'locationList',
   props:{
-    letter:String
+    letter:String,
+    cities:Object,
+    hotCities:Array
   },
   watch:{
     letter(){
@@ -59,87 +61,8 @@ export default {
   },
   data(){
     return {
-      city:'',
-      cities:{
-        "A":[
-           {
-             id:"0000001",
-             name:"安庆"
-           },
-           {
-             id:"0000002",
-             name:"安庆"
-           },
-           {
-             id:"0000003",
-             name:"安庆"
-           },
-           {
-             id:"0000004",
-             name:"安庆"
-           },
-           {
-             id:"0000005",
-             name:"安庆"
-           },
-           {
-             id:"0000006",
-             name:"安庆"
-           },
-        ],
-        "B":[
-           {
-             id:"0000011",
-             name:"北京"
-           },
-           {
-             id:"0000012",
-             name:"北京"
-           },
-           {
-             id:"0000013",
-             name:"北京"
-           },
-           {
-             id:"0000014",
-             name:"北京"
-           },
-           {
-             id:"0000015",
-             name:"北京"
-           },
-           {
-             id:"0000016",
-             name:"北京"
-           },
-        ]
-      },
-      hotCities: [
-       {
-         id:"000001",
-         name:"北京"
-       },
-       {
-         id:"000002",
-         name:"上海"
-       },
-       {
-         id:"000003",
-         name:"广州"
-       },
-       {
-         id:"000004",
-         name:"深圳"
-       },
-       {
-         id:"000005",
-         name:"杭州"
-       },
-       {
-         id:"000006",
-         name:"南京"
-       }
-      ]
+      city:''
+      
     }
   },
   mounted(){
