@@ -4,6 +4,7 @@ import Vue from 'vue'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import App from './App'
 import router from './router'
+import store from './store/store.js'
 // 引入两个css文件 border.css&reset.css
 import  '@/assets/style/border.css'
 import  '@/assets/style/reset.css'
@@ -18,6 +19,18 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  mounted(){
+  	let map = new BMap.Map('allmap')
+  let myCity = new BMap.LocalCity()
+  myCity.get((result)=>{
+    if(result){
+      this.$store.state.city = result.name
+    }else{
+      this.$store.state.city ='北京'
+    }
+  })
+  }
 })
