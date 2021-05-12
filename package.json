@@ -14,7 +14,7 @@
     "axios": "^0.19.2",
     "better-scroll": "^1.15.2",
     "fastclick": "^1.0.6",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1",
